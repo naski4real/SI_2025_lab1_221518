@@ -1,3 +1,5 @@
+import java.util.*;
+
 enum Priority {
     LOW, MEDIUM, HIGH
 }
@@ -58,27 +60,26 @@ class TaskManager {
         }
     }
 
-    // MISSING FEATURES:
-
     // 1. Remove a task by name
     public void removeTask(String name) {
-        // TODO: Implement removal logic
+        tasks.removeIf(task -> task.getName().equals(name));
     }
 
     // 2. Find all completed tasks
     public List<Task> getCompletedTasks() {
-        // TODO: Implement logic to return completed tasks
-        return new ArrayList<>();
+        List<Task> completed = new ArrayList<>();
+        for (Task task : tasks) {
+            if (task.isCompleted()) {
+                completed.add(task);
+            }
+        }
+        return completed;
     }
 
     // 3. List tasks sorted by name
     public void sortTasksByName() {
-        // TODO: Implement sorting logic
-    public List<Task> getCompletedTasks() {
-        // TODO: Implement logic to return completed tasks
-        return new ArrayList<>();
+        tasks.sort(Comparator.comparing(Task::getName));
     }
-   }
 
     // 4. Sort tasks by priority
     public void sortTasksByPriority() {
