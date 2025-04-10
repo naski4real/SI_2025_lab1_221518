@@ -1,3 +1,5 @@
+import java.util.*;
+
 enum Priority {
     LOW, MEDIUM, HIGH
 }
@@ -58,13 +60,10 @@ class TaskManager {
         }
     }
 
-    // MISSING FEATURES:
-
     // 1. Remove a task by name
     public void removeTask(String name) {
         tasks.removeIf(task -> task.getName().equals(name));
     }
-
 
     // 2. Find all completed tasks
     public List<Task> getCompletedTasks() {
@@ -111,7 +110,7 @@ class TaskManager {
     }
 }
 
-public class Main {
+public class SI2025Lab1Main {
     public static void main(String[] args) {
         TaskManager manager = new TaskManager();
         manager.addTask("Write report", Priority.HIGH, "Work");
