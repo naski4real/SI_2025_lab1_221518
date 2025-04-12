@@ -1,4 +1,7 @@
-* 029b5a8 Implement getCompletedTasks method
+* d929d08 Final commit
+| * dd430c4 Final
+| * 029b5a8 Implement getCompletedTasks method
+|/  
 | *   d5c806e Merge pull request #2 from naski4real/sortedbyname
 | |\  
 | | * dba6c3a Implement sortTasksByName method
