@@ -1,0 +1,16 @@
+* 029b5a8 Implement getCompletedTasks method
+| *   d5c806e Merge pull request #2 from naski4real/sortedbyname
+| |\  
+| | * dba6c3a Implement sortTasksByName method
+| |/  
+|/|   
+| * fb87996 Merge pull request #1 from naski4real/removetaskbyname
+|/| 
+| *   46d8e82 Merge branch 'master' into removetaskbyname
+| |\  
+| |/  
+|/|   
+* | 0fd7f60 Add starter code
+| * 10d5555 Implement removeTaskByName method
+|/  
+* 8f84528 Initial commit
